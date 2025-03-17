@@ -1,0 +1,224 @@
+The device is running!
+
+<AR2>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR2>sy
+Enter system view, return user view with Ctrl+Z.
+[AR2]
+[AR2]
+[AR2]int g 0/0/1/1
+           ^
+Error: Wrong parameter found at '^' position.
+[AR2]int g 0/0/1.1
+[AR2-GigabitEthernet0/0/1.1]ip add 10.3.12.2 30
+Feb 27 2025 19:39:39-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[0]:The line protocol IP
+ on the interface GigabitEthernet0/0/1.1 has entered the UP state. 
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]ipv6 en 
+Info: Please enable IPv6 function in system view. 
+[AR2-GigabitEthernet0/0/1.1]ipv6 add 2001:3:12::2/126
+Info: Please enable IPv6 function in system view. 
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]
+[AR2-GigabitEthernet0/0/1.1]q
+[AR2]ipv6 
+[AR2]
+[AR2]
+[AR2]
+[AR2]
+[AR2]int g 
+Feb 27 2025 19:40:00-08:00 AR2 IPV6/2/IF_IPV6CHANGE:OID 16777216.50331648.100663
+296.16777216.33554432.16777216.922746880.33554432.0.16777216 The status of the I
+Pv6 Interface changed. (IfIndex=134217728, IfDescr=HUAWEI, AR Series, GigabitEth
+ernet0/0/1.1 Interface, IfOperStatus=16777216, IfAdminStatus=16777216) 
+[AR2]int g 
+Feb 27 2025 19:40:00-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[1]:The line protocol IP
+v6 on the interface GigabitEthernet0/0/1.1 has entered the UP state. 
+[AR2]int g 0/0/1.2
+[AR2-GigabitEthernet0/0/1.2]ip add 20.3.12.2 30
+Feb 27 2025 19:40:06-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[2]:The line protocol IP
+ on the interface GigabitEthernet0/0/1.2 has entered the UP state. 
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]ipv6 ebn 
+                                 ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1.2]ipv6 en 
+[AR2-GigabitEthernet0/0/1.2]ipv6 add 2002:3:12::2/126
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+Feb 27 2025 19:40:24-08:00 AR2 IPV6/2/IF_IPV6CHANGE:OID 16777216.50331648.100663
+296.16777216.33554432.16777216.922746880.33554432.0.16777216 The status of the I
+Pv6 Interface changed. (IfIndex=150994944, IfDescr=HUAWEI, AR Series, GigabitEth
+ernet0/0/1.2 Interface, IfOperStatus=16777216, IfAdminStatus=16777216) 
+[AR2-GigabitEthernet0/0/1.2]
+Feb 27 2025 19:40:24-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[3]:The line protocol IP
+v6 on the interface GigabitEthernet0/0/1.2 has entered the UP state. 
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]
+[AR2-GigabitEthernet0/0/1.2]int g 0/0/2
+[AR2-GigabitEthernet0/0/2]ip add 10.12.13.1 30
+Feb 27 2025 19:40:35-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[4]:The line protocol IP
+ on the interface GigabitEthernet0/0/2 has entered the UP state. 
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]ipv6 en 
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]ipv6 add 2001:12:13::1/126
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+Feb 27 2025 19:40:57-08:00 AR2 IPV6/2/IF_IPV6CHANGE:OID 16777216.50331648.100663
+296.16777216.33554432.16777216.922746880.33554432.0.16777216 The status of the I
+Pv6 Interface changed. (IfIndex=83886080, IfDescr=HUAWEI, AR Series, GigabitEthe
+rnet0/0/2 Interface, IfOperStatus=16777216, IfAdminStatus=16777216) 
+[AR2-GigabitEthernet0/0/2]
+Feb 27 2025 19:40:57-08:00 AR2 %%01IFNET/4/LINK_STATE(l)[5]:The line protocol IP
+v6 on the interface GigabitEthernet0/0/2 has entered the UP state. 
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+[AR2-GigabitEthernet0/0/2]
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR2>sy
+Enter system view, return user view with Ctrl+Z.
+[AR2]
+[AR2]
+[AR2]
+<AR2>di s?
+     ^
+Error:Ambiguous command found at '^' position.
+<AR2>display st?
+  sta-access-mode  Station access control mode
+  sta-blacklist    Station MAC address black list
+  sta-whitelist    Station MAC address white list
+  standby          Standby-interface status and configuration information
+  startup          Config parameter for system to startup
+  static-route     Static route
+  station          <Group> station command group
+  statistics       <Group> statistics command group
+  stp              <Group> stp command group
+<AR2>display static-route
+                          ^
+Error:Incomplete command found at '^' position.
+<AR2>display static-route?
+  static-route  Static route
+<AR2>display static-route ?
+  ldp-sync  LDP-Static route synchronization
+<AR2>sy
+Enter system view, return user view with Ctrl+Z.
+[AR2]di th
+[V200R003C00]
+#
+ sysname AR2
+#
+ snmp-agent local-engineid 800007DB03000000000000
+ snmp-agent 
+#
+ clock timezone China-Standard-Time minus 08:00:00
+#
+portal local-server load portalpage.zip
+#
+ drop illegal-mac alarm
+#
+ipv6 
+#
+ set cpu-usage threshold 80 restore 75
+#
+return
+[AR2]int g0/0/1
+[AR2-GigabitEthernet0/0/1]di th
+[V200R003C00]
+#
+interface GigabitEthernet0/0/1
+#
+return
+[AR2-GigabitEthernet0/0/1]stat	
+[AR2-GigabitEthernet0/0/1]static-route 20.1.5.2 255.255.255.252 10.1.3.1
+                                       ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]ip static-route 20.1.5.2 255.255.255.252 10.1.3.1
+                             ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]ip static-route 20.1.5.2 255.255.255.252 10.1.3.1 ?
+                             ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]static-route 20.1.5.0 255.255.255.252 10.1.3.1 
+                                       ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]ip route-static 0.0.0.0 0.0.0.0 10.1.3.1
+[AR2]uint g0/0/1
+     ^
+Error: Unrecognized command found at '^' position.
+[AR2]int g0/0/1
+[AR2-GigabitEthernet0/0/1]undo ip route-static
+                                  ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]di th
+[V200R003C00]
+#
+interface GigabitEthernet0/0/1
+#
+return
+[AR2-GigabitEthernet0/0/1]undo ip route-static?
+                                  ^
+Error: Unrecognized command found at '^' position.
+[AR2-GigabitEthernet0/0/1]undo 
+<AR2>sy
+Enter system view, return user view with Ctrl+Z.
+[AR2]undo int g0/0/1
+Error: Cannot delete this interface.
+[AR2]undo static-route
+          ^
+Error: Unrecognized command found at '^' position.
+[AR2]undo ip static-route
+             ^
+Error: Unrecognized command found at '^' position.
+[AR2]
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR2>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+<AR2>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+<AR2>
+     ^
+Error: Unrecognized command found at '^' position.
+<AR2>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR2>

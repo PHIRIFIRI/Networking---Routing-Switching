@@ -1,0 +1,161 @@
+The device is running!
+
+[LSW4]
+[LSW4] User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW4>
+<LSW4>sy 
+Enter system view, return user view with Ctrl+Z.
+[LSW4]
+[LSW4]
+[LSW4]int vlan 20
+[LSW4-Vlanif20]
+Feb 27 2025 13:50:13-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[0]:Interface Vlanif20 ha
+s turned into UP state.ip add 192.168.20.254 24
+[LSW4-Vlanif20]
+Feb 27 2025 13:50:21-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[1]:The line protocol I
+P on the interface Vlanif20 has entered the UP state.
+[LSW4-Vlanif20]
+[LSW4-Vlanif20]ipv6 en
+Info: Please enable IPv6 function in system view. 
+[LSW4-Vlanif20]ip
+Feb 27 2025 13:50:27-08:00 LSW4 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 7, the 
+change loop count is 0, and the maximum number of records is 4095.v6 add 192:168
+:20::254/64
+Info: Please enable IPv6 function in system view. 
+[LSW4-Vlanif20]
+[LSW4-Vlanif20]
+[LSW4-Vlanif20]ipv6
+[LSW4]
+[LSW4]
+[LSW4]
+[LSW4]
+Feb 27 2025 13:50:44-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[2]:The line protocol I
+Pv6 on the interface Vlanif20 has entered the UP state.
+Feb 27 2025 13:50:47-08:00 LSW4 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 9, the 
+change loop count is 0, and the maximum number of records is 4095.int vlan 1213
+[LSW4-Vlanif1213]
+Feb 27 2025 13:50:49-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[3]:Interface Vlanif1213 
+has turned into UP state.
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]ip add 10.12.13.2 30
+[LSW4-Vlanif1213]
+Feb 27 2025 13:50:57-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[4]:The line protocol I
+P on the interface Vlanif1213 has entered the UP state.
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]ipv6 en 
+[LSW4-Vlanif1213]ipv6 add  
+Feb 27 2025 13:51:07-08:00 LSW4 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 11, the
+ change loop count is 0, and the maximum number of records is 4095.2001:12:13::2
+/126
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]
+[LSW4-Vlanif1213]q
+Feb 27 2025 13:51:16-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[5]:The line protocol I
+Pv6 on the interface Vlanif1213 has entered the UP state.
+[LSW4]
+[LSW4]
+[LSW4]
+[LSW4]
+Feb 27 2025 13:51:17-08:00 LSW4 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 12, the
+ change loop count is 0, and the maximum number of records is 4095.disp vlan sum
+
+static vlan:
+Total 3 static vlan.
+  1 20 1213 
+
+dynamic vlan:
+Total 0 dynamic vlan.
+
+reserved vlan:
+Total 0 reserved vlan.
+[LSW4]
+[LSW4]
+[LSW4]
+[LSW4]
+[LSW4]
+[LSW4] User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW4>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 15:08:52-08:00 LSW4 %%01CFM/4/SAVE(l)[0]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW4'
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW4>
+Feb 27 2025 15:14:07-08:00 LSW4 %%01PHY/1/PHY(l)[1]:    Ethernet0/0/1: change st
+atus to down
+Feb 27 2025 15:14:07-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[2]:Interface Vlanif20 ha
+s turned into DOWN state.
+Feb 27 2025 15:14:07-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[3]:The line protocol I
+P on the interface Vlanif20 has entered the DOWN state.
+Feb 27 2025 15:14:07-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[4]:The line protocol I
+Pv6 on the interface Vlanif20 has entered the DOWN state.
+Feb 27 2025 15:14:08-08:00 LSW4 %%01PHY/1/PHY(l)[5]:    Ethernet0/0/1: change st
+atus to up
+Feb 27 2025 15:14:08-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[6]:Interface Vlanif20 ha
+s turned into UP state.
+Feb 27 2025 15:14:08-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[7]:The line protocol I
+P on the interface Vlanif20 has entered the UP state.
+Feb 27 2025 15:14:10-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[8]:The line protocol I
+Pv6 on the interface Vlanif20 has entered the UP state. User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW4>
+<LSW4>sa
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:41:28-08:00 LSW4 %%01CFM/4/SAVE(l)[0]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW4>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW4>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:41:57-08:00 LSW4 %%01CFM/4/SAVE(l)[1]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW4>
+Feb 27 2025 16:48:24-08:00 LSW4 %%01PHY/1/PHY(l)[2]:    Ethernet0/0/1: change st
+atus to down
+Feb 27 2025 16:48:24-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[3]:Interface Vlanif20 ha
+s turned into DOWN state.
+Feb 27 2025 16:48:24-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[4]:The line protocol I
+P on the interface Vlanif20 has entered the DOWN state.
+Feb 27 2025 16:48:24-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[5]:The line protocol I
+Pv6 on the interface Vlanif20 has entered the DOWN state.
+Feb 27 2025 16:48:25-08:00 LSW4 %%01PHY/1/PHY(l)[6]:    Ethernet0/0/1: change st
+atus to up
+Feb 27 2025 16:48:25-08:00 LSW4 %%01IFNET/4/IF_STATE(l)[7]:Interface Vlanif20 ha
+s turned into UP state.
+Feb 27 2025 16:48:25-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[8]:The line protocol I
+P on the interface Vlanif20 has entered the UP state.
+Feb 27 2025 16:48:27-08:00 LSW4 %%01IFNET/4/LINK_STATE(l)[9]:The line protocol I
+Pv6 on the interface Vlanif20 has entered the UP state.
+<LSW4>

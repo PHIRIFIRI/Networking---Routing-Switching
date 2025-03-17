@@ -1,0 +1,239 @@
+  traffic-eng                 Configure ISIS traffic engineering
+  undo                        Cancel current configuration
+  virtual-system              Configure virtual system
+  vrbd                        Display version information
+
+[R1-isis-100] ipv6 ?
+  auto-cost                Enable the automatic cost on the system
+  bandwidth-reference      Set the bandwidth reference value
+  bfd                      Bidirectional forwarding detection
+  circuit                  Set the default tag for ISIS
+  circuit-cost             Set the global default cost for all the interfaces
+  default-route-advertise  Set the advertisement of the default route
+  enable                   Configure IPv6 commands for ISIS
+  filter-policy            Set route filtering policy
+  frr                      Enable ISIS fast-reroute
+  import-route             Import routes from other protocols into ISIS
+  maximum                  Set number of equal cost routes (paths)
+  preference               Set ISIS route preference
+  prefix-priority          Configure the priority of routes calculate
+  spf-priority             Configure the SPF priority of the MT
+  summary                  Configure summary address for IPv6
+  topology                 Configure the MT
+
+[R1-isis-100] ipv6 to	
+[R1-isis-100] ipv6 topology ?
+  STRING<1-31>  Topology name
+
+[R1-isis-100]
+[R1-isis-100]
+[R1-isis-100]
+Feb 27 2025 14:22:10-08:00 R1 %%01BGP/3/STATE_CHG_UPDOWN(l)[10]:The status of th
+e peer 1.1.1.3 changed from OPENCONFIRM to ESTABLISHED. (InstanceName=Public, St
+ateChangeReason=Up) 
+[R1-isis-100]q
+[R1]in
+    ^
+Error:Ambiguous command found at '^' position.
+[R1]int g0/0/0
+[R1-GigabitEthernet0/0/0]isis a	
+[R1-GigabitEthernet0/0/0]isis authentication-mode md5	
+[R1-GigabitEthernet0/0/0]isis authentication-mode md5 Huawei@123
+[R1-GigabitEthernet0/0/0]int g0/0/0
+Feb 27 2025 14:23:00-08:00 R1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.
+191.3.1 configurations have been changed. The current change number is 58, the c
+hange loop count is 0, and the maximum number of records is 40951
+[R1-GigabitEthernet0/0/1]isi	
+[R1-GigabitEthernet0/0/1]isis a	
+[R1-GigabitEthernet0/0/1]isis authentication-mode md	
+[R1-GigabitEthernet0/0/1]isis authentication-mode md5 Huawei@123
+Error: Please enable IS-IS on the specified interface first.
+[R1-GigabitEthernet0/0/1]isis en?
+  enable                                  
+[R1-GigabitEthernet0/0/1]isis en	
+[R1-GigabitEthernet0/0/1]isis enable ?
+  INTEGER<1-65535>  Process ID
+  <cr>              
+
+[R1-GigabitEthernet0/0/1]isis enable 
+Warning: No such process exists.
+[R1-GigabitEthernet0/0/1]q
+[R1]isis?
+  isis                                    
+[R1]isis en
+         ^
+Error: Wrong parameter found at '^' position.
+[R1]isis en?
+         ^
+Error: Unrecognized command found at '^' position.
+[R1]isis en ?
+         ^
+Error: Wrong parameter found at '^' position.
+[R1]isis?
+  isis                                    
+[R1]isis
+[R1-isis-1]
+Feb 27 2025 14:23:40-08:00 R1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.
+191.3.1 configurations have been changed. The current change number is 59, the c
+hange loop count is 0, and the maximum number of records is 4095.q
+[R1]isis 100
+[R1-isis-100]int g0/0/1
+[R1-GigabitEthernet0/0/1]isis 	
+[R1-GigabitEthernet0/0/1]isis a	
+[R1-GigabitEthernet0/0/1]isis authentication-mode m	
+[R1-GigabitEthernet0/0/1]isis authentication-mode md5 Huawei@123
+Error: Please enable IS-IS on the specified interface first.
+[R1-GigabitEthernet0/0/1]isis 
+Feb 27 2025 14:24:13-08:00 R1 %%01BGP/3/STATE_CHG_UPDOWN(l)[11]:The status of th
+e peer 1.1.1.2 changed from OPENCONFIRM to ESTABLISHED. (InstanceName=Public, St
+ateChangeReason=Up) 100
+[R1-isis-100]int g0/0/1
+[R1-GigabitEthernet0/0/1]isis en
+[R1-GigabitEthernet0/0/1]isis a	
+[R1-GigabitEthernet0/0/1]isis authentication-mode m	
+[R1-GigabitEthernet0/0/1]isis authentication-mode md5 Huawei@123
+Feb 27 2025 14:24:30-08:00 R1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.
+191.3.1 configurations have been changed. The current change number is 60, the c
+hange loop count is 0, and the maximum number of records is 4095.
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]di th 
+#
+interface GigabitEthernet0/0/1
+ isis enable 1
+ isis authentication-mode md5 '};(Vv%N>;N",HP~\'zPr2<#
+#
+return
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]disp ip int b
+Feb 27 2025 14:24:40-08:00 R1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.
+191.3.1 configurations have been changed. The current change number is 61, the c
+hange loop count is 0, and the maximum number of records is 4095. 
+*down: administratively down
+!down: FIB overload down
+^down: standby
+(l): loopback
+(s): spoofing
+(d): Dampening Suppressed
+The number of interface that is UP in Physical is 7
+The number of interface that is DOWN in Physical is 7
+The number of interface that is UP in Protocol is 6
+The number of interface that is DOWN in Protocol is 8
+
+Interface                         IP Address/Mask      Physical   Protocol  
+Ethernet0/0/0                     unassigned           down       down      
+Ethernet0/0/1                     unassigned           down       down      
+GigabitEthernet0/0/0              10.1.2.1/30          up         up        
+GigabitEthernet0/0/1              unassigned           up         down      
+GigabitEthernet0/0/1.1            10.1.5.2/30          up         up        
+GigabitEthernet0/0/1.2            20.1.5.2/30          up         up        
+GigabitEthernet0/0/2              10.1.3.1/30          up         up        
+GigabitEthernet0/0/3              unassigned           down       down      
+LoopBack0                         1.1.1.1/32           up         up(s)     
+NULL0                             unassigned           up         up(s)     
+Serial0/0/0                       unassigned           down       down      
+Serial0/0/1                       unassigned           down       down      
+Serial0/0/2                       unassigned           down       down      
+Serial0/0/3                       unassigned           down       down      
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]
+[R1-GigabitEthernet0/0/1]i User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<R1>sy 
+Enter system view, return user view with Ctrl+Z.
+[R1]isis 100
+[R1-isis-100]di th 
+#
+isis 100
+ is-level level-2
+ timer lsp-generation 1 50 50 level-1
+ timer lsp-generation 1 50 50 level-2
+ flash-flood level-2
+ network-entity 49.0100.0010.0100.1001.00
+ timer spf 1 50 50
+ #
+ ipv6 enable topology standard
+ #
+#
+return
+[R1-isis-100]ipv6 en  	
+[R1-isis-100]ipv6 enable to	
+[R1-isis-100]ipv6 enable topology ?
+  compatible  Enable IPv6 for compatible topology
+  ipv6        Enable IPv6 for MT
+  standard    Enable IPv6 for standard topology
+
+[R1-isis-100]ipv6 enable topology c	
+[R1-isis-100]ipv6 enable topology compatible ?
+  enable-mt-spf  Enable MT-SPF in compatible mode
+  <cr>           
+
+[R1-isis-100]ipv6 enable topology compatible 
+[R1-isis-100]
+[R1-isis-100]
+[R1-isis-100]
+Feb 27 2025 14:47:31-08:00 R1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.
+191.3.1 configurations have been changed. The current change number is 62, the c
+hange loop count is 0, and the maximum number of records is 4095.  
+[R1-isis-100]
+[R1-isis-100]
+[R1-isis-100]q
+[R1] User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<R1>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 17.
+Feb 27 2025 15:08:56-08:00 R1 %%01CFM/4/SAVE(l)[0]:The user chose Y when decidin
+g whether to save the configuration to the device.
+Save the configuration successfully.
+<R1> User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<R1>
+<R1>
+Feb 27 2025 15:47:54-08:00 R1 %%01BGP/3/STATE_CHG_UPDOWN(l)[0]:The status of the
+ peer 1.1.1.2 changed from ESTABLISHED to IDLE. (InstanceName=Public, StateChang
+eReason=Notification Message Received) 
+Feb 27 2025 15:48:26-08:00 R1 %%01BGP/3/STATE_CHG_UPDOWN(l)[1]:The status of the
+ peer 1.1.1.2 changed from OPENCONFIRM to ESTABLISHED. (InstanceName=Public, Sta
+teChangeReason=Up)  User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<R1>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 17.
+Feb 27 2025 16:40:36-08:00 R1 %%01CFM/4/SAVE(l)[0]:The user chose Y when decidin
+g whether to save the configuration to the device.
+Save the configuration successfully.
+<R1>
+    ^
+Error: Unrecognized command found at '^' position.
+<R1>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 17.
+Feb 27 2025 16:42:04-08:00 R1 %%01CFM/4/SAVE(l)[1]:The user chose Y when decidin
+g whether to save the configuration to the device.
+Save the configuration successfully.
+<R1>
+<R1>

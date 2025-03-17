@@ -1,0 +1,238 @@
+  data-collection      AP data acquisition
+  lldp                 LLDP protocol 
+  manufacturer-config  AP restore manufacturer config
+  modify               Modify AP
+  password             Cipher password keyword 
+  update               AP update 
+  username             Username keyword 
+  whitelist            AP white list 
+[AC1-wlan-view]ap-d ?
+               ^
+Error: Unrecognized command found at '^' position.
+[AC1-wlan-view]ap-id ?
+  INTEGER<0-8191>  AP ID
+[AC1-wlan-view]ap-id 0 ?
+  ap-mac   AP MAC address
+  ap-sn    AP SN
+  ap-type  AP type
+  type-id  AP type ID
+  <cr>     Please press ENTER to execute command 
+[AC1-wlan-view]ap-id 0 ap-t	
+[AC1-wlan-view]ap-id 0 ap-type ?
+  STRING<1-31>  AP type
+[AC1-wlan-view]ap-id 0 ap-type 1 ?
+  ap-mac  AP MAC address
+  ap-sn   AP SN
+  <cr>    Please press ENTER to execute command 
+[AC1-wlan-view]ap-id 0 ap-type 1 
+Error: AP type does not exist.
+[AC1-wlan-view]ap-id 0 ap-ma	
+[AC1-wlan-view]ap-id 0 ap-mac 0000-0000-0000 ?
+  ap-sn  AP SN
+  <cr>   Please press ENTER to execute command 
+[AC1-wlan-view]ap-id 0 ap-mac 0000-0000-0000 
+Error: MAC address can not be zero or multicast MAC or broadcast MAC.
+[AC1-wlan-view]ap-id 1 ap-ma 	
+[AC1-wlan-view]ap-id 1 ap-mac 0000-5e00-0102 ?
+  ap-sn  AP SN
+  <cr>   Please press ENTER to execute command 
+[AC1-wlan-view]ap-id 1 ap-mac 0000-5e00-0102 
+[AC1-wlan-ap-1]
+[AC1-wlan-ap-1]
+[AC1-wlan-ap-1]ap-g	
+[AC1-wlan-ap-1]ap-group HQ-1
+Warning: This operation may cause AP reset. If the country code changes, it will
+ clear channel, power and antenna gain configurations of the radio, Whether to c
+ontinue? [Y/N]:y
+Info: This operation may take a few seconds. Please wait for a moment.. done.
+[AC1-wlan-ap-1]
+[AC1-wlan-ap-1]
+[AC1-wlan-ap-1]
+[AC1-wlan-ap-1]q
+[AC1-wlan-view]disp ap all
+Info: This operation may take a few seconds. Please wait for a moment.done.
+Total AP information:
+idle : idle            [1]
+--------------------------------------------------------------------------------
+-------
+ID   MAC            Name           Group IP Type            State STA Uptime
+--------------------------------------------------------------------------------
+-------
+1    0000-5e00-0102 0000-5e00-0102 HQ-1  -  -               idle  0   -
+--------------------------------------------------------------------------------
+-------
+Total: 1
+[AC1-wlan-view]
+[AC1-wlan-view]
+[AC1-wlan-view]q
+[AC1]q
+<AC1>sav
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file has been saved successfully
+  Note: The configuration file will take effect after being activated
+<AC1>
+<AC1>
+<AC1>
+<AC1>
+<AC1>sy 
+Enter system view, return user view with Ctrl+Z.
+[AC1]wlan
+[AC1-wlan-view]ap-g	
+[AC1-wlan-view]ap-group HQ-1
+                        ^
+Error: Unrecognized command found at '^' position.
+[AC1-wlan-view]ap-group na	
+[AC1-wlan-view]ap-group name HQ-1
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]di th 
+#
+return
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]vap	
+[AC1-wlan-ap-group-HQ-1]vap-profile ?
+  STRING<1-35>  Profile name
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service
+                                                    ^
+Error: Incomplete command found at '^' position.
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service ?
+  wlan  WLAN
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service w	
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan ?
+  INTEGER<1-16>  WLAN ID
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan 1
+                                                           ^
+Error: Incomplete command found at '^' position.
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan 1 ?
+  radio  Radio
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan 1 r	
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan 1 radio ?
+  INTEGER<0-2>  Radio ID
+  all           All
+[AC1-wlan-ap-group-HQ-1]vap-profile HQ-wlan-service wlan 1 radio  all
+Info: This operation may take a few seconds, please wait...done.
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]di th 
+#
+  radio 0
+   vap-profile HQ-wlan-service wlan 1
+  radio 1
+   vap-profile HQ-wlan-service wlan 1
+  radio 2
+   vap-profile HQ-wlan-service wlan 1
+#
+return
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]
+[AC1-wlan-ap-group-HQ-1]q
+[AC1-wlan-view]q
+[AC1]q
+<AC1>sav
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file has been saved successfully
+  Note: The configuration file will take effect after being activated
+<AC1>
+<AC1>
+<AC1>
+<AC1>
+<AC1>
+<AC1>??????display current-configuration
+#
+ sysname AC1
+#
+ set memory-usage threshold 0
+#
+ssl renegotiation-rate 1 
+#
+vlan batch 710
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name macportal_authen_profile
+#
+diffserv domain default
+#
+radius-server template default
+#
+pki realm default
+ rsa local-key-pair default
+ enrollment self-signed
+#
+
+<display current-configuration
+#
+ sysname AC1
+#
+ set memory-usage threshold 0
+#
+ssl renegotiation-rate 1 
+#
+vlan batch 710
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name macportal_authen_profile
+#
+diffserv domain default
+#
+radius-server template default
+#
+pki realm default
+ rsa local-key-pair default
+ enrollment self-signed
+#
+display current-configuration
+#
+ sysname AC1
+#
+ set memory-usage threshold 0
+#
+ssl renegotiation-rate 1 
+#
+vlan batch 710
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name macportal_authen_profile
+#
+diffserv domain default
+#
+radius-server template default
+#
+pki realm default
+ rsa local-key-pair default
+ enrollment self-signed
+#
+
+<AC1>????????????????????????'???????'????$????????????????
+     ^
+Error: Unrecognized command found at '^' position.
+<AC1>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file has been saved successfully
+  Note: The configuration file will take effect after being activated
+<AC1>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on

@@ -1,0 +1,226 @@
+                 destination address
+  -g             Specify group address to be traced
+  -gw            Specify the send mode that send query packet to specified      
+                 last-hop router
+  -l             Analyse rate of multicast flow
+  -m             Specify the maximum TTL used in maximum hop mode
+  -mr            Specify group address as the multicast response address
+  -q             Specify the number of probe packet
+  -r             Specify address of multicast receiver for the path being traced
+  -tr            Specify the TTL in multicast response message
+  -ts            Specify the maximum hops of hop-by-hop trace
+  -ur            Specify unicast address as the response address
+  -v             Verbose output
+  -vpn-instance  Specify VPN-Instance of MPLS VPN
+  -w             Specify the timeout in seconds to wait for response message
+  source         Specify address of the multicast source for the path being     
+                 traced
+[AR1-ospf-1-area-0.0.0.0]mtrace -b?
+  -b  Specify the send mode that send query packet to multicast address         
+      224.0.0.2
+[AR1-ospf-1-area-0.0.0.0]mt
+[AR1-ospf-1-area-0.0.0.0]mpl	
+[AR1-ospf-1-area-0.0.0.0]mpls-te ?
+  enable  Enable OSPF specific features
+[AR1-ospf-1-area-0.0.0.0]mpls-te en
+Error: Please enable the opaque function in the OSPF view first.
+[AR1-ospf-1-area-0.0.0.0]q
+[AR1-ospf-1]q
+[AR1]spf 1
+     ^
+Error: Unrecognized command found at '^' position.
+[AR1]ospf 1
+[AR1-ospf-1] op	
+[AR1-ospf-1]opaque-capability ?
+  enable  Enable OSPF specific features
+[AR1-ospf-1]opaque-capability  en
+[AR1-ospf-1]a 0
+[AR1-ospf-1-area-0.0.0.0]pls te	
+[AR1-ospf-1-area-0.0.0.0]pmp	
+[AR1-ospf-1-area-0.0.0.0]mpls-te ?
+  enable  Enable OSPF specific features
+[AR1-ospf-1-area-0.0.0.0]mpls-te  e	
+[AR1-ospf-1-area-0.0.0.0]mpls-te  enable ?
+  standard-complying  Accept only the LSAs in standard format
+  <cr>                Please press ENTER to execute command 
+[AR1-ospf-1-area-0.0.0.0]mpls-te  enable 
+[AR1-ospf-1-area-0.0.0.0]q
+[AR1-ospf-1]exp	
+[AR1-ospf-1]exp?
+            ^
+Error: Unrecognized command found at '^' position.
+[AR1-ospf-1]exp ?
+            ^
+Error: Unrecognized command found at '^' position.
+[AR1-ospf-1]exp 
+            ^
+Error: Unrecognized command found at '^' position.
+[AR1-ospf-1]a 0
+[AR1-ospf-1-area-0.0.0.0]?
+ospf-area view commands:
+  abr-summary          Summarize routes matching address/mask (border routers   
+                       only)
+  arp-ping             ARP-ping
+  authentication-mode  Specify an authentication mode
+  backup               Backup  information
+  clear                Clear
+  default-cost         Specify the default route cost of stub/nssa area
+  description          Specify OSPF area description
+  dialer               Dialer
+  display              Display information
+  filter               Filter prefix capability
+  mpls-te              Traffic engineering function
+  mtrace               Trace route to multicast source
+  network              Enable routing on an IP network
+  nssa                 Specify a NSSA area
+  ping                 <Group> ping command group
+  quit                 Exit from current mode and enter prior mode
+  reset                <Group> reset command group
+  return               Enter the privileged mode
+  sham-link            Sham Link
+  stub                 Specify a stub area
+  test-aaa             Accounts test
+  tracert              <Group> tracert command group
+  undo                 Negate a command or set its defaults
+  vlink-peer           Define a virtual link and its parameters
+[AR1-ospf-1-area-0.0.0.0]des	
+[AR1-ospf-1-area-0.0.0.0]description 
+                                     ^
+Error:Incomplete command found at '^' position.
+[AR1-ospf-1-area-0.0.0.0]description ?
+  TEXT<"...">  OSPF area description (no more than 80 characters)
+[AR1-ospf-1-area-0.0.0.0]description non forcible?
+  <cr>  Please press ENTER to execute command 
+[AR1-ospf-1-area-0.0.0.0]description non forcible
+[AR1-ospf-1-area-0.0.0.0]up	
+[AR1-ospf-1-area-0.0.0.0]up?
+                         ^
+Error: Unrecognized command found at '^' position.
+[AR1-ospf-1-area-0.0.0.0]t	
+[AR1-ospf-1-area-0.0.0.0]tr?
+  tracert  <Group> tracert command group
+[AR1-ospf-1-area-0.0.0.0]disp this
+[V200R003C00]
+#
+ area 0.0.0.0 
+  description non forcible
+  mpls-te enable
+#
+return
+[AR1-ospf-1-area-0.0.0.0]
+[AR1-ospf-1-area-0.0.0.0]q
+[AR1-ospf-1]q
+[AR1]ospf ?
+  INTEGER<1-65535>  Process ID
+  mib-binding       Mib-Binding a Process
+  router-id         <Group> router-id command group
+  valid-ttl-hops    Valid GTSM TTL hops
+  vpn-instance      VPN routing/forwarding Instance
+  <cr>              Please press ENTER to execute command 
+[AR1]ospf?
+  ospf    Open Shortest Path First (OSPF)
+  ospfv3  <Group> ospfv3 command group
+[AR1]ospfv	
+[AR1]ospfv3 ?
+  INTEGER<1-65535>  Process ID
+  mib-binding       Mib-Binding a Process
+  vpn-instance      VPN routing/forwarding instance
+  <cr>              Please press ENTER to execute command 
+[AR1]ospfv3 1 ?
+  vpn-instance  VPN routing/forwarding instance
+  <cr>          Please press ENTER to execute command 
+[AR1]ospfv3 1
+[AR1-ospfv3-1]a	
+[AR1-ospfv3-1]area 0
+[AR1-ospfv3-1-area-0.0.0.0]d	
+[AR1-ospfv3-1-area-0.0.0.0]description ?
+  TEXT<"...">  OSPFv3 area description (not more than 80 characters)
+[AR1-ospfv3-1-area-0.0.0.0]description non forcible ?
+  <cr>  Please press ENTER to execute command 
+[AR1-ospfv3-1-area-0.0.0.0]description non forcible 
+[AR1-ospfv3-1-area-0.0.0.0]
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR1>
+<AR1>
+<AR1>sy
+Enter system view, return user view with Ctrl+Z.
+[AR1]int g0/0/1
+[AR1-GigabitEthernet0/0/1]ip ?
+  accounting         <Group> accounting command group
+  address            <Group> address command group
+  binding            Enable binding of an interface with a VPN instance
+  fast-forwarding    Enable fast forwarding 
+  forward-broadcast  Specify IP directed broadcast information
+  netstream          IP netstream feature
+  verify             IP verify
+[AR1-GigabitEthernet0/0/1]sta	
+[AR1-GigabitEthernet0/0/1]standby
+[AR1-GigabitEthernet0/0/1]static-route
+[AR1-GigabitEthernet0/0/1]	
+[AR1-GigabitEthernet0/0/1]st	
+[AR1-GigabitEthernet0/0/1]di th
+[V200R003C00]
+#
+interface GigabitEthernet0/0/1
+#
+return
+[AR1-GigabitEthernet0/0/1]q
+[AR1]di th
+[V200R003C00]
+#
+ sysname AR1
+#
+ board add 0/4 4GET 
+#
+ snmp-agent local-engineid 800007DB03000000000000
+ snmp-agent 
+#
+ clock timezone China-Standard-Time minus 08:00:00
+#
+portal local-server load portalpage.zip
+#
+ drop illegal-mac alarm
+#
+ipv6 
+#
+ lldp enable 
+#
+ set cpu-usage threshold 80 restore 75
+#
+return
+[AR1]int g0/0/1
+[AR1-GigabitEthernet0/0/1]ip st?
+                             ^
+Error: Unrecognized command found at '^' position.
+[AR1-GigabitEthernet0/0/1]sta	
+[AR1-GigabitEthernet0/0/1]standby
+[AR1-GigabitEthernet0/0/1]static-route 0.0.0.0 0.0.0.0 10.2.16.2
+                                       ^
+Error: Unrecognized command found at '^' position.
+[AR1-GigabitEthernet0/0/1]
+<AR1>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+<AR1>
+     ^
+Error: Unrecognized command found at '^' position.
+<AR1>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+<AR1>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR1>

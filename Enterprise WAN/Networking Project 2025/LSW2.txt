@@ -1,0 +1,202 @@
+[LSW2-Vlanif30]
+Feb 27 2025 14:38:49-08:00 LSW2 %%01VRRP/4/STATEWARNINGEXTEND(l)[1]:Virtual Rout
+er state INITIALIZE changed to MASTER, because of interface up. (Interface=Vlani
+f30, VrId=3, InetType=IPv4)
+Feb 27 2025 14:38:57-08:00 LSW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 29, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW2-Vlanif30]
+[LSW2-Vlanif30]
+Feb 27 2025 14:41:08-08:00 LSW2 %%01VRRP/4/STATEWARNINGEXTEND(l)[2]:Virtual Rout
+er state MASTER changed to BACKUP, because of priority calculation. (Interface=V
+lanif10, VrId=1, InetType=IPv4)
+[LSW2-Vlanif30]q
+[LSW2]stp mode mstp
+[LSW2]mstp	
+[LSW2]mstp?
+      ^
+Error: Unrecognized command found at '^' position.
+[LSW2]mode ms	
+[LSW2]stp ?
+  bpdu-filter           STP BPDU filter
+  bpdu-protection       Specify BPDU protection function
+  bridge-diameter       Specify bridge diameter
+  converge              Specify STP converge mode
+  disable               Disable Spanning Tree Protocol (STP)
+  edged-port            Specify edge port
+  enable                Enable Spanning Tree Protocol (STP)
+  instance              Spanning tree instance
+  max-hops              Specify max hops
+  mcheck                Specify mcheck
+  mode                  Specify state machine mode
+  pathcost-standard     Specify STP port path cost standard
+  priority              Specify bridge priority
+  process               The MSTP process
+  region-configuration  Enter MSTP region view
+  root                  Specify root switch
+  snooping              STP snooping
+  tc-protection         Enable the TC-BPDU Protection function
+  timer                 Specify timer configuration
+  timer-factor          Specify aged out time factor
+
+[LSW2]stp r	
+[LSW2]stp root ?
+  primary    Primary root switch
+  secondary  Secondary root switch
+
+[LSW2]stp root s	
+[LSW2]stp root secondary ?
+  <cr>  
+
+[LSW2]stp root secondary 
+[LSW2]
+Feb 27 2025 14:44:37-08:00 LSW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 30, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW2]int vlan 10
+[LSW2-Vlanif10]stp?
+               ^
+Error: Unrecognized command found at '^' position.
+[LSW2-Vlanif10]mstp?
+               ^
+Error: Unrecognized command found at '^' position.
+[LSW2-Vlanif10]q1
+               ^
+Error: Unrecognized command found at '^' position.
+[LSW2-Vlanif10]q
+[LSW2]stp ?
+  bpdu-filter           STP BPDU filter
+  bpdu-protection       Specify BPDU protection function
+  bridge-diameter       Specify bridge diameter
+  converge              Specify STP converge mode
+  disable               Disable Spanning Tree Protocol (STP)
+  edged-port            Specify edge port
+  enable                Enable Spanning Tree Protocol (STP)
+  instance              Spanning tree instance
+  max-hops              Specify max hops
+  mcheck                Specify mcheck
+  mode                  Specify state machine mode
+  pathcost-standard     Specify STP port path cost standard
+  priority              Specify bridge priority
+  process               The MSTP process
+  region-configuration  Enter MSTP region view
+  root                  Specify root switch
+  snooping              STP snooping
+  tc-protection         Enable the TC-BPDU Protection function
+  timer                 Specify timer configuration
+  timer-factor          Specify aged out time factor
+
+[LSW2]stp mode?
+  mode                                    
+[LSW2]stp mode ?
+  mstp  Multiple Spanning Tree Protocol (MSTP) mode
+  rstp  Rapid Spanning Tree Protocol (RSTP) mode
+  stp   Spanning Tree Protocol (STP) mode
+
+[LSW2]stp mode m	
+[LSW2]stp mode mstp ?
+  <cr>  
+
+[LSW2]stp ?
+  bpdu-filter           STP BPDU filter
+  bpdu-protection       Specify BPDU protection function
+  bridge-diameter       Specify bridge diameter
+  converge              Specify STP converge mode
+  disable               Disable Spanning Tree Protocol (STP)
+  edged-port            Specify edge port
+  enable                Enable Spanning Tree Protocol (STP)
+  instance              Spanning tree instance
+  max-hops              Specify max hops
+  mcheck                Specify mcheck
+  mode                  Specify state machine mode
+  pathcost-standard     Specify STP port path cost standard
+  priority              Specify bridge priority
+  process               The MSTP process
+  region-configuration  Enter MSTP region view
+  root                  Specify root switch
+  snooping              STP snooping
+  tc-protection         Enable the TC-BPDU Protection function
+  timer                 Specify timer configuration
+  timer-factor          Specify aged out time factor
+
+[LSW2]stp i	
+[LSW2]stp instance ?
+  INTEGER<0-48>  Identifier of spanning tree instance
+
+[LSW2]stp p	
+[LSW2]stp process?
+  process                                 
+[LSW2]stp process ?
+  INTEGER<1-15>  The identifier of the MSTP process
+
+[LSW2]disp stp?
+  stp                                     
+[LSW2]disp stp ?
+  brief                 Brief information
+  error                 Information of error packet
+  instance              Spanning tree instance
+  interface             Specify interface
+  process               The MSTP process
+  region-configuration  Region configuration
+  slot                  Specify the slot
+  tc-bpdu               Number of TC/TCN BPDUs sent from and received by the
+                        port
+  topology-change       Display information about topology change
+  vlan                  Virtual LAN
+  |                     Matching output
+  <cr>                  
+
+[LSW2]disp stp v?
+  vlan                                    
+[LSW2]disp stp v	
+[LSW2]disp stp vlan ?
+  INTEGER<1-4094>  VLAN ID
+
+[LSW2]disp stp User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW2>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW2>sy
+Enter system view, return user view with Ctrl+Z.
+[LSW2]ospf 1 router	
+[LSW2]ospf 1 router-id 1.1.1.8
+[LSW2-ospf-1]
+Feb 27 2025 15:03:58-08:00 LSW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 31, the
+ change loop count is 0, and the maximum number of records is 4095.q
+[LSW2]ospf 1 a 0
+             ^
+Error:Too many parameters found at '^' position.
+[LSW2]ospf 1
+[LSW2-ospf-1]a 0
+[LSW2-ospf-1-area-0.0.0.0]
+Feb 27 2025 15:04:18-08:00 LSW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 32, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW2-Vlanif2]save
+              ^
+Error: Unrecognized command found at '^' position.
+[LSW2-Vlanif2]y
+<LSW2>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:40:17-08:00 LSW2 %%01CFM/4/SAVE(l)[0]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW2>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW2>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:41:45-08:00 LSW2 %%01CFM/4/SAVE(l)[1]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW2>

@@ -1,0 +1,230 @@
+  X.X.X.X        Specify IPv4 address
+  X:X::X:X       Specify IPv6 address
+  address-set    Indicate the address-set
+  any            Indicate any conditions of ip address set
+  range          Indicate the IP address range
+
+[FW1-policy-nat-rule-nat]source-address  any
+[FW1-policy-nat-rule-nat]?
+policy-nat-rule view commands:
+  action                       Indicate the rule action
+  add                          Add a tag
+  arp                          Specify ARP configuration information
+  configuration                Configuration interlock
+  description                  Indicate description for the rule
+  destination-address          Indicate the destination-address for the rule
+  destination-address-exclude  Configure exclude one or more specific IP
+                               addresses
+  destination-zone             Specify the destination-zone for the rule
+  disable                      Disable 
+  display                      Display current system information
+  download                     Load specify module
+  egress-interface             Indicate the egress-interface for the rule
+  enable                       Enable 
+  firewall                     Indicate firewall
+  nat-type                     Configure the NAT type
+  packet-capture               Indicate packet capture configuration
+  ping                         Send echo messages
+  pki                          Configure Public Key Infrastructure (PKI) module
+                               information
+  quit                         Exit from current command view
+  reset                        Reset operation
+  return                       Exit to user view
+  run                          Execute command of user view
+  screen-width                 Set screen width
+  service                      Indicate service for the rule
+  service-exclude              Configure exclude one or more specific ports
+  source-address               Indicate the source-address for the rule
+  source-address-exclude       Configure exclude one or more specific IP
+                               addresses
+  source-zone                  Specify the source-zone for the rule
+  test-aaa                     Accounts test
+  time-range                   Indicate time-range for the rule
+  tracert                      Trace route to host
+  undo                         Cancel current setting
+
+[FW1-policy-nat-rule-nat]
+Feb 27 2025 14:33:26 FW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.191.3
+.1 configurations have been changed. The current change number is 37, the change
+ loop count is 0, and the maximum number of records is 4095.
+[FW1-policy-nat-rule-nat]des	
+[FW1-policy-nat-rule-nat]destination-zone 	
+[FW1-policy-nat-rule-nat]destination-	
+[FW1-policy-nat-rule-nat]destination-zone?
+  destination-zone                        
+[FW1-policy-nat-rule-nat]destination-zone?
+  destination-zone                        
+[FW1-policy-nat-rule-nat]destination-?
+  destination-address                     destination-address-exclude
+  destination-zone                        
+[FW1-policy-nat-rule-nat]q
+[FW1-policy-nat]ac	
+[FW1-policy-nat]ac	
+[FW1-policy-nat]ac	
+[FW1-policy-nat]ac	
+[FW1-policy-nat]di th 
+2025-02-27 14:33:50.690 
+#
+nat-policy
+ rule name nat
+  source-zone trust
+  destination-zone untrust
+  (not configure the action)
+#
+return
+[FW1-policy-nat]sc	
+[FW1-policy-nat]rul	
+[FW1-policy-nat]rule n	
+[FW1-policy-nat]rule name nat
+[FW1-policy-nat-rule-nat]ac	
+[FW1-policy-nat-rule-nat]action ?
+  destination-nat  Indicate that the rule action is destination NAT
+  no-nat           Indicate that the rule action is NO-NAT
+  source-nat       Indicate that the rule action is source NAT
+
+[FW1-policy-nat-rule-nat]action 
+Feb 27 2025 14:34:06 FW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.191.3
+.1 configurations have been changed. The current change number is 38, the change
+ loop count is 0, and the maximum number of records is 4095.
+[FW1-policy-nat-rule-nat]action so	
+[FW1-policy-nat-rule-nat]action source-nat 
+                                           ^
+Error:Incomplete command found at '^' position.
+[FW1-policy-nat-rule-nat]action source-nat  ?
+  address-group   Indicate that the NAT mode is the NAT address group
+  easy-ip         Indicate the action is easy-ip
+  static-mapping  Indicate the action is static mapping
+
+[FW1-policy-nat-rule-nat]action source-nat  ass	
+[FW1-policy-nat-rule-nat]action source-nat  ass?
+                                            ^
+Error: Unrecognized command found at '^' position.
+[FW1-policy-nat-rule-nat]action source-nat  add	
+[FW1-policy-nat-rule-nat]action source-nat  address-group 0 ?
+  <cr>  
+
+[FW1-policy-nat-rule-nat]action source-nat  address-group 0 
+[FW1-policy-nat-rule-nat]
+[FW1-policy-nat-rule-nat]
+[FW1-policy-nat-rule-nat]q
+[FW1-policy-nat]q
+Feb 27 2025 14:34:26 FW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.191.3
+.1 configurations have been changed. The current change number is 39, the change
+ loop count is 0, and the maximum number of records is 4095.
+[FW1-policy-nat]q
+[FW1]aaa
+[FW1-aaa]di th 
+2025-02-27 14:37:12.630 
+#
+aaa
+ authentication-scheme default
+ authentication-scheme admin_local
+ authentication-scheme admin_radius_local
+ authentication-scheme admin_hwtacacs_local
+ authentication-scheme admin_ad_local
+ authentication-scheme admin_ldap_local
+ authentication-scheme admin_radius
+ authentication-scheme admin_hwtacacs
+ authentication-scheme admin_ad
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+  service-type internetaccess ssl-vpn l2tp ike
+  internet-access mode password
+  reference user current-domain
+ manager-user audit-admin
+  password cipher @%@%&f}s$JKm\Q6@403j]<X1sQNTpk~EG$g;1Q<i{KY8na*YQNWs@%@%
+  service-type web terminal
+  level 15
+
+ manager-user api-admin
+  password cipher @%@%Ez%-Sx9*-A7~hyH]1,*N[xQ<:4d/'8Xby!5}\RKsR,lVxQ~[@%@%
+  level 15
+
+ manager-user admin
+  password cipher @%@%;<7j7S>`03(GjiSBClM5*.!>q$a=J]7gc<K*VCPREWn7.!A*@%@%
+  service-type web terminal
+  level 15
+
+ role system-admin
+ role device-admin
+ role device-admin(monitor)
+ role audit-admin
+ bind manager-user audit-admin role audit-admin
+ bind manager-user admin role system-admin
+#
+return
+[FW1-aaa]man	
+[FW1-aaa]manager-user admin 
+[FW1-aaa-manager-user-admin]ser	
+[FW1-aaa-manager-user-admin]service-type web ter tel	
+[FW1-aaa-manager-user-admin]service-type web ter telnet 
+Warning: The user access modes include Telnet or FTP, so security risks exist.
+[FW1-aaa-manager-user-admin]
+[FW1-aaa-manager-user-admin]q
+[FW1-aaa]
+Feb 27 2025 14:37:36 FW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25.191.3
+.1 configurations have been changed. The current change number is 40, the change
+ loop count is 0, and the maximum number of records is 4095.
+[FW1-aaa]q
+[FW1]
+
+
+
+
+ User interface con0 is available
+
+
+
+Please Press ENTER.
+
+
+Login authentication
+
+
+Username:
+Username:
+Username:
+Error: Failed to login.
+
+Us???????
+
+
+
+
+ User interface con0 is available
+
+
+
+Please Press ENTER.
+
+
+Login authentication
+
+
+Username:
+Username:aaddmmiinn
+Password:
+Error: Authentication fail
+
+Username:admin
+Password:
+*************************************************************************
+*         Copyright (C) 2014-2018 Huawei Technologies Co., Ltd.         *
+*                           All rights reserved.                        *
+*               Without the owner's prior written consent,              *
+*        no decompiling or reverse-engineering shall be allowed.        *
+*************************************************************************
+
+
+<FW1>save
+The current configuration will be written to hda1:/vrpcfg.cfg.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 15:02:48 FW1 %%01CFM/4/SAVE(s)[0]:The user chose Y when deciding whe
+ther to save the configuration to the device.
+Save the configuration successfully.
+<FW1>???????????????????????????????????????????????????????????????????????????
+???????????????????????????????????????????????????????????????????????????????
+????????????????????????????????????????????????????????????????????????????????
+??????????????????????????????????????????????????

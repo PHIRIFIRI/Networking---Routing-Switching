@@ -1,0 +1,203 @@
+  expected-lease  Client expected lease
+  gateway-detect  Gateway detect
+  hostname        Host name
+  renew           DHCP client renew
+  request         Request
+[Huawei-Vlanif20]dhcp client h	
+[Huawei-Vlanif20]dhcp client hostname ?
+  TEXT<"...">  Value of string. The length of option must be no more than 64.
+[Huawei-Vlanif20]dhcp client def	
+[Huawei-Vlanif20]dhcp client default-route ?
+  preference  Specifies route preference
+[Huawei-Vlanif20]dhcp client defaulnt g	
+[Huawei-Vlanif20]dhcp client gateway-detect ?
+  period  Period
+[Huawei-Vlanif20]dhcp client gatewayreq	
+[Huawei-Vlanif20]dhcp client request ?
+  option-list  Option list
+[Huawei-Vlanif20]dhcp client rt ren	
+[Huawei-Vlanif20]dhcp client renew ?
+  <cr>  Please press ENTER to execute command 
+[Huawei-Vlanif20]dhcp clserver gat	
+[Huawei-Vlanif20]dhcp server gate ?
+                      ^
+Error: Unrecognized command found at '^' position.
+[Huawei-Vlanif20]dhcp server gate 
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+Info: You are advised to change the password to ensure security.
+<Huawei>disp esn
+ ESN of device: Failed to read ESN
+<Huawei>
+<Huawei>
+<Huawei>
+<Huawei>
+<Huawei>
+<Huawei>
+<Huawei>
+<Huawei>disp dev	
+<Huawei>disp dev
+             ^
+Error: Unrecognized command found at '^' position.
+<Huawei>disp dev	
+<Huawei>disp dev
+<Huawei>disp dev
+<Huawei>disdisp mac	
+<Huawei>disp mac-address
+-------------------------------------------------------------------------------
+MAC Address    VLAN/VSI                          Learned-From        Type      
+-------------------------------------------------------------------------------
+0000-5e00-0102    1/-                     GE0/0/0                    dynamic   
+
+-------------------------------------------------------------------------------
+Total items displayed = 1 
+
+<Huawei>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+Info: You are advised to change the password to ensure security.
+<Huawei>save
+             ^
+Error: Incomplete command found at '^' position.
+<Huawei>ap?
+        ^
+Error: Unrecognized command found at '^' position.
+<Huawei>save
+             ^
+Error: Incomplete command found at '^' position.
+<Huawei>??????display current-configuration
+#
+ clock timezone Indian Standard Time minus 05:13:20
+ clock daylight-saving-time Day Light Saving Time repeating 12:32 9-1 12:32 11-2
+3 00:00 2005 2005 
+#
+ set memory-usage threshold 0
+#
+ipv6
+#
+vlan batch 20
+#
+stp priority 40960
+#
+arp learning strict
+#
+lldp enable 
+#
+dns resolve 
+#
+interface Vlanif20
+ ipv6 enable
+ ip address 169.254.1.1 255.255.0.0
+ ipv6 address auto link-local
+ ipv6 address auto global local-identifier default
+display current-configuration
+#
+ clock timezone Indian Standard Time minus 05:13:20
+ clock daylight-saving-time Day Light Saving Time repeating 12:32 9-1 12:32 11-2
+3 00:00 2005 2005 
+#
+ set memory-usage threshold 0
+#
+ipv6
+#
+vlan batch 20
+#
+stp priority 40960
+#
+arp learning strict
+#
+lldp enable 
+#
+dns resolve 
+#
+interface Vlanif20
+ ipv6 enable
+ ip address 169.254.1.1 255.255.0.0
+ ipv6 address auto link-local
+ ipv6 address auto global local-identifier default
+  ---- Moredisplay current-configuration
+#
+ clock timezone Indian Standard Time minus 05:13:20
+ clock daylight-saving-time Day Light Saving Time repeating 12:32 9-1 12:32 11-2
+3 00:00 2005 2005 
+#
+ set memory-usage threshold 0
+#
+ipv6
+#
+vlan batch 20
+#
+stp priority 40960
+#
+arp learning strict
+#
+lldp enable 
+#
+dns resolve 
+#
+interface Vlanif20
+ ipv6 enable
+ ip address 169.254.1.1 255.255.0.0
+ ipv6 address auto link-local
+ ipv6 address auto global local-identifier default
+
+<Huawei>?isplay current-configuration
+#
+ clock timezone Indian Standard Time minus 05:13:20
+ clock daylight-saving-time Day Light Saving Time repeating 12:32 9-1 12:32 11-2
+3 00:00 2005 2005 
+#
+ set memory-usage threshold 0
+#
+ipv6
+#
+vlan batch 20
+#
+stp priority 40960
+#
+arp learning strict
+#
+lldp enable 
+#
+dns resolve 
+#
+interface Vlanif20
+ ipv6 enable
+ ip address 169.254.1.1 255.255.0.0
+ ipv6 address auto link-local
+ ipv6 address auto global local-identifier default
+  ---- Mordisplay current-configuration
+#
+ clock timezone Indian Standard Time minus 05:13:20
+ clock daylight-saving-time Day Light Saving Time repeating 12:32 9-1 12:32 11-2
+3 00:00 2005 2005 
+#
+ set memory-usage threshold 0
+#
+ipv6
+#
+vlan batch 20
+#
+stp priority 40960
+#
+arp learning strict
+#
+lldp enable 
+#
+dns resolve 
+#
+interface Vlanif20
+ ipv6 enable
+ ip address 169.254.1.1 255.255.0.0
+ ipv6 address auto link-local
+ ipv6 address auto global local-identifi
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on

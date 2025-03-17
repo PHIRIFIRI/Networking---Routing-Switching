@@ -1,0 +1,102 @@
+The device is running!
+
+<AR3>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR3>sy 
+Enter system view, return user view with Ctrl+Z.
+[AR3]
+[AR3]
+[AR3]
+[AR3]ipv6 en 
+          ^
+Error:Too many parameters found at '^' position.
+[AR3]
+[AR3]
+[AR3]ipv6
+[AR3]
+[AR3]
+[AR3]int g 0/0/0
+[AR3-GigabitEthernet0/0/0]ip add 192.168.30.254 24
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]ipv6 en 
+[AR3-GigabitEthernet0/0/0]ipv6 add 192:168:30::254/64
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]
+[AR3-GigabitEthernet0/0/0]q
+[AR3]int g 0/0/1.1
+[AR3-GigabitEthernet0/0/1.1]ip add 10.2.16.2 30
+Feb 27 2025 19:41:45-08:00 AR3 %%01IFNET/4/LINK_STATE(l)[0]:The line protocol IP
+ on the interface GigabitEthernet0/0/1.1 has entered the UP state. 
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]ipv6 en 
+[AR3-GigabitEthernet0/0/1.1]ipv6 add 2001:2:16::2/126
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]
+[AR3-GigabitEthernet0/0/1.1]int 
+Feb 27 2025 19:42:06-08:00 AR3 IPV6/2/IF_IPV6CHANGE:OID 16777216.50331648.100663
+296.16777216.33554432.16777216.922746880.33554432.0.16777216 The status of the I
+Pv6 Interface changed. (IfIndex=134217728, IfDescr=HUAWEI, AR Series, GigabitEth
+ernet0/0/1.1 Interface, IfOperStatus=16777216, IfAdminStatus=16777216) 
+[AR3-GigabitEthernet0/0/1.1]int g 
+Feb 27 2025 19:42:06-08:00 AR3 %%01IFNET/4/LINK_STATE(l)[1]:The line protocol IP
+v6 on the interface GigabitEthernet0/0/1.1 has entered the UP state. 
+[AR3-GigabitEthernet0/0/1.1]int g 0/0/1.2
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]ip add 20.2.16.2 30
+Feb 27 2025 19:42:14-08:00 AR3 %%01IFNET/4/LINK_STATE(l)[2]:The line protocol IP
+ on the interface GigabitEthernet0/0/1.2 has entered the UP state. 
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]ip v6 en 
+                               ^
+Error: Unrecognized command found at '^' position.
+[AR3-GigabitEthernet0/0/1.2]ipv6 en 
+[AR3-GigabitEthernet0/0/1.2]ipv6 add 2002:2:16::2/126
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+[AR3-GigabitEthernet0/0/1.2]
+Feb 27 2025 19:42:38-08:00 AR3 IPV6/2/IF_IPV6CHANGE:OID 16777216.50331648.100663
+296.16777216.33554432.16777216.922746880.33554432.0.16777216 The status of the I
+Pv6 Interface changed. (IfIndex=150994944, IfDescr=HUAWEI, AR Series, GigabitEth
+ernet0/0/1.2 Interface, IfOperStatus=16777216, IfAdminStatus=16777216) 
+[AR3-GigabitEthernet0/0/1.2]
+Feb 27 2025 19:42:38-08:00 AR3 %%01IFNET/4/LINK_STATE(l)[3]:The line protocol IP
+v6 on the interface GigabitEthernet0/0/1.2 has entered the UP state. 
+[AR3-GigabitEthernet0/0/1.2]
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR3>
+<AR3>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:
+<AR3>save
+  The current configuration will be written to the device. 
+  Are you sure to continue? (y/n)[n]:y
+  It will take several minutes to save configuration file, please wait.......
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+<AR3>
+
+  Please check whether system data has been changed, and save data in time
+
+  Configuration console time out, please press any key to log on
+
+<AR3>

@@ -1,0 +1,200 @@
+Enter system view, return user view with Ctrl+Z.
+[LSW1]int vlan 10
+[LSW1-Vlanif10]port def vlan 1
+                    ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif10]vrr	
+[LSW1-Vlanif10]vrrp v	
+[LSW1-Vlanif10]vrrp vrid 1
+                           ^
+Error:Incomplete command found at '^' position.
+[LSW1-Vlanif10]vrrp vrid 1 ip add 192.168.10.254
+                           ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif10]vrrp vrid ?
+  INTEGER<1-255>  Virtual router identifier
+
+[LSW1-Vlanif10]vrrp vrid 1 ?
+  authentication-mode  Specify password and authentication mode
+  preempt-mode         Specify preempt mode
+  priority             Specify priority
+  timer                Specify timer
+  track                Specify the track configuration
+  version-3            Specify the device to support V3 for VRRP
+  virtual-ip           Specify virtual IP address
+
+[LSW1-Vlanif10]vrrp vrid 1 v	
+[LSW1-Vlanif10]vrrp vrid 1 virtual-ip 192.168.10.254
+[LSW1-Vlanif10]
+Feb 27 2025 14:31:55-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[0]:Virtual Rout
+er state BACKUP changed to MASTER, because of protocol timer expired. (Interface
+=Vlanif10, VrId=1, InetType=IPv4)
+Feb 27 2025 14:31:57-08:00 LSW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 30, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW1-Vlanif10]vrr	
+[LSW1-Vlanif10]vrrpvri	
+[LSW1-Vlanif10]vrrp 	
+[LSW1-Vlanif10]vrrp v	
+[LSW1-Vlanif10]vrrp vrid p	
+[LSW1-Vlanif10]vrrp vrid 
+               ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif10]vrr	
+[LSW1-Vlanif10]vrrp v	
+[LSW1-Vlanif10]vrrp vrid 1 p	
+[LSW1-Vlanif10]vrrp vrid 1 ?
+  authentication-mode  Specify password and authentication mode
+  preempt-mode         Specify preempt mode
+  priority             Specify priority
+  timer                Specify timer
+  track                Specify the track configuration
+  version-3            Specify the device to support V3 for VRRP
+  virtual-ip           Specify virtual IP address
+
+[LSW1-Vlanif10]vrrp vrid 1 pri	
+[LSW1-Vlanif10]vrrp vrid 1 priority 120
+[LSW1-Vlanif10]
+Feb 27 2025 14:33:37-08:00 LSW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 31, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW1-Vlanif10]int vln 20
+                   ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif10]int vlan 20
+[LSW1-Vlanif20]vrr	
+[LSW1-Vlanif20]vrrp v	
+[LSW1-Vlanif20]vrrp vrid 2 ip add 172.16.10.254
+                           ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif20]vrrp vrid 2 ip add 172.16.10.254 ?
+                           ^
+Error: Unrecognized command found at '^' position.
+[LSW1-Vlanif20]v	
+[LSW1-Vlanif20]vrrp v	
+[LSW1-Vlanif20]vrrp vrid 2 v	
+[LSW1-Vlanif20]vrrp vrid 2 virtual-ip 172.16.10.254
+[LSW1-Vlanif20]V	
+[LSW1-Vlanif20]vrrp
+Feb 27 2025 14:34:43-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[1]:Virtual Rout
+er state BACKUP changed to MASTER, because of protocol timer expired. (Interface
+=Vlanif20, VrId=2, InetType=IPv4) V	
+[LSW1-Vlanif20]vrrp vrid 2 
+Feb 27 2025 14:34:47-08:00 LSW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 32, the
+ change loop count is 0, and the maximum number of records is 4095.PRI	
+[LSW1-Vlanif20]
+[LSW1-Vlanif20]INT VLAN 30
+[LSW1-Vlanif30]vr	
+[LSW1-Vlanif30]vrrp v	
+[LSW1-Vlanif30]vrrp vrid 3 v	
+[LSW1-Vlanif30]vrrp vrid 3 virtual-ip 192.168.100.254
+[LSW1-Vlanif30]
+Feb 27 2025 14:36:07-08:00 LSW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 33, the
+ change loop count is 0, and the maximum number of records is 4095.
+Feb 27 2025 14:36:09-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[2]:Virtual Rout
+er state BACKUP changed to MASTER, because of protocol timer expired. (Interface
+=Vlanif30, VrId=3, InetType=IPv4)
+Feb 27 2025 14:36:53-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[3]:Virtual Rout
+er state MASTER changed to BACKUP, because of priority calculation. (Interface=V
+lanif10, VrId=1, InetType=IPv4)
+Feb 27 2025 14:38:49-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[4]:Virtual Rout
+er state MASTER changed to BACKUP, because of priority calculation. (Interface=V
+lanif30, VrId=3, InetType=IPv4)
+[LSW1-Vlanif30]int vlan 10
+[LSW1-Vlanif10]vrrp	
+[LSW1-Vlanif10]vrrp v	
+[LSW1-Vlanif10]vrrp vrid 1 pri	
+[LSW1-Vlanif10]vrrp vrid 1 priority 150
+[LSW1-Vlanif10]
+Feb 27 2025 14:41:07-08:00 LSW1 %%01VRRP/4/STATEWARNINGEXTEND(l)[5]:Virtual Rout
+er state BACKUP changed to MASTER, because of priority calculation. (Interface=V
+lanif10, VrId=1, InetType=IPv4)
+Feb 27 2025 14:41:17-08:00 LSW1 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.2
+5.191.3.1 configurations have been changed. The current change number is 34, the
+ change loop count is 0, and the maximum number of records is 4095.
+[LSW1-Vlanif10]q
+[LSW1]ipv	
+[LSW1]ipv6?
+  ipv6                                    
+[LSW1]ipv6 ?
+  fib-loadbalance-type  Load balance method IPv6 FIB 
+  host                  Add/Remove a host name and address to the IPv6 host
+                        name table
+  icmp-error            Specify ICMPv6 configuration information
+  nd                    Neighbor discovery
+  pathmtu               Path MTU
+  route                 All routes
+  route-static          IPv6 static routes
+  <cr>                  
+
+[LSW1]disp ipv	
+[LSW1]disp ipv6 
+                ^
+Error:Incomplete command found at '^' position.
+[LSW1]disp ipv6 ?
+  attack-source  Attack-source
+  fib            Forwarding information base
+  ftp-server     Status and configuration of the FTP server
+  ha             Display information of socket HA
+  host           Host table(s)
+  interface      Display IPv6 Information of interfaces
+  neighbors      IPv6 neighbor cache entries
+  pathmtu        Path MTU
+  routing-table  IPv6 routing table
+  socket         Display information of created sockets
+  statistics     IPv6 Statistic Information of datagrams
+
+[LSW1]disp ipv6  int ?
+  Ethernet         Ethernet interface
+  GigabitEthernet  GigabitEthernet interface
+  MEth             MEth interface
+  Vlanif           Vlan interface
+  brief            Brief summary of IPv6 status and configuration
+  |                Matching output
+  <cr>             
+
+[LSW1]disp ipv6  int v	
+[LSW1]disp ipv6  int Vlanif ?
+  <10,20,30,57,78,710>  VLAN interface number
+
+[LSW1]disp ipv6  int Vlanif 10 20 30
+                               ^
+Error:Too many parameters found at '^' position.
+[LSW1]disp ipv6 int Vlanif 10 
+Vlanif10 current state : UP 
+IPv6 protocol current state : UP
+IPv6 is enabled, link-local address is FE80::4E1F:CCFF:FE48:6B3
+  Global unicast address(es):
+    192:168:10::254, subnet is 192:168:10::/64
+  Joined group address(es):
+    FF02::1:FF00:254
+    FF02::1:FF48:6B3
+    FF02::2
+    FF02::1
+  MTU is 1500 bytes
+  ND DAD is enabled, number of DAD attempts: 1
+  ND reachable time is 30000 milliseconds
+  ND retransmit interval is 1000 milliseconds
+  Hosts use stateless autoconfig for addresses
+[LSW1]di
+[LSW1-Vlanif20]
+<LSW1>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:39:35-08:00 LSW1 %%01CFM/4/SAVE(l)[4]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW1>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW1>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:41:22-08:00 LSW1 %%01CFM/4/SAVE(l)[5]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW1>

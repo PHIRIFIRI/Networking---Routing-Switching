@@ -1,0 +1,250 @@
+  nqa-agent                         Display NQA agent status
+  nqa-server                        Display NQA server status, NotInService or
+                                    Active
+  ntdp                              Network topology discovery protocol
+  ntp-service                       NTP (Network Time Protocol) service 
+  oam                               Operations, Administration, Maintenance
+  observe-port                      Mirror port
+  ospf                              Open Shortest Path First (OSPF)
+  ospfv3                            OSPF version 3 for IPv6
+  paf                               PAF(Product Adaptive File)
+  patch-information                 Display patch information
+  pim                               PIM status and configuration information
+  policy-based-route                Policy based routing status and
+                                    configuration information
+  policy-vlan                       Vlan assignment based on policy
+  port                              Switch port
+  port-group                        Port-group
+  port-isolate                      Port isolate
+  port-mirroring                    Mirror port
+  portal                            Configure Portal local server
+  power                             Power information 
+  pppoe                             PPPOE 
+  protocol-vlan                     Protocol-based VLAN
+  pw-template                       Specify PW template configuration
+  qos                               QoS configuration
+  radius-attribute                  Attribute config
+  radius-server                     RADIUS status and configuration information
+  rawip                             RAWIP statistics information
+  reboot-info                       Reboot information
+  record                            Record information
+  recording-scheme                  Display AAA recording scheme 
+  rip                               RIP (Routing Information Protocol)
+  ripng                             RIPng (Routing information next generation
+                                    protocol)
+  rm                                Routing Module
+  rmon                              RMON information
+  rmon2                             Specify RMON2 configuration
+  route-policy                      Display configured route-policy
+  router                            Configure router information
+  rrpp                              Rapid ring protection protocol
+  rsa                               Display RSA module status and configuration
+                                    information
+  saved-configuration               Automatically backup the current
+                                    configuration
+  schedule                          Schedule system task
+  scp-client                        SCP client source
+  script-string                     Display all script-string content
+  sep                               Smart ethernet protection
+  service-scheme                    Service scheme
+  smart-link                        Smart link configuration information
+  snmp-agent                        Specify SNMP (Simple Network Management
+                                    Protocol) configuration information
+  ssh                               SSH status and configuration information
+  startup                           Display the configuration for startup
+  storm-control                     Storm control
+  stp                               Display Spanning Tree Protocol (STP) status
+                                    and configuration information
+  sub-vlan                          Specify access-VLAN
+  super-vlan                        Specify aggregate-VLAN
+  synchronization-result            Result of synchronizing the configuration
+                                    files of cluster members
+  tcm                               TCM module
+  tcp                               TCP status and configuration information
+  telnet                            Telnet service status and configuration
+                                    information
+  telnet-client                     Show Telnet client configuration
+  test-packet                       Set the test packet
+  tftp-client                       Show TFTP client configuration
+  this                              This view's current configuration
+  time-range                        Time range status and configuration
+                                    information
+  traffic                           Specify traffic configuration information
+  traffic-applied                   Applied ACL Information 
+  traffic-policy                    Apply specific traffic policy
+  traffic-statistics                MPLS L2VPN traffic statistics
+  transceiver                       Transceiver information 
+  trapbuffer                        Trapbuffer status and configuration
+                                    information
+  trunkfwdtbl                       The forwarding table of trunk
+  trunkmembership                   Trunk membership
+  tunnel-info                       Tunnel Info
+  tunnel-selector                   Tunnel-policy selector
+  udp                               UDP module
+  udp-helper                        UDP Helper 
+  user-group                        User group
+  user-interface                    Terminal user interface status and
+                                    configuration information
+  user-vlan                         Specify User-VLAN map to the Multicast-VLAN
+  users                             The status and configuration of a user
+                                    interface
+  version                           System hardware and software version
+                                    information
+  virtual-cable-test                Virtual Cable Test
+  vlan                              Virtual LAN
+  vll                               Display VLL
+  voice-vlan                        Voice VLAN
+  vrrp                              VRRP configuration information
+  vrrp6                             Specify configuration information about
+                                    VRRP6
+  web-auth-server                   Portal authentication server
+  y1731                             Y1731
+
+[LSW3-Ethernet0/0/2]disp 
+                         ^
+Error:Incomplete command found at '^' position.
+[LSW3-Ethernet0/0/2]
+[LSW3-Ethernet0/0/2]disp us	
+[LSW3-Ethernet0/0/2]disp user-i	
+[LSW3-Ethernet0/0/2]disp user-interface ?
+  INTEGER<0-54>  Specify a user terminal interface and configure it 
+  console        Primary user terminal interface
+  maximum-vty    The maximum number of VTY users, the default value is 5
+  summary        Quick user interface status summary
+  vty            The virtual user terminal interface 
+  |              Matching output
+  <cr>           
+
+[LSW3-Ethernet0/0/2]disp user-interface summ	
+[LSW3-Ethernet0/0/2]disp user-interface summary 
+  User interface type : [CON]
+	   0:U
+  User interface type : [TTY]
+	   1:XXXX XXXX 
+	   9:XXXX XXXX 
+	  17:XXXX XXXX 
+	  25:XXXX XXXX 
+  User interface type : [AUX]
+	  33:X
+  User interface type : [VTY]
+	  34:XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX X
+  User interface type : [LTT]
+	  67:XXXX XXXX XXXX XXXX X
+
+   18 character mode users.   (U) 
+   66 UI never used.      (X) 
+   18 total UI in use
+  *    : Current user-interface is active.
+  I    : Current user-interface is active and work in async mode.
+  Idx  : Absolute index of user-interface.
+  Type : Type and relative index of user-interface.
+  Privi: The privilege of user-interface.
+  ActualPrivi: The actual privilege of user-interface.
+  Auth : The authentication mode of user-interface.
+      A: Authenticate use AAA.
+      N: Current user-interface need not authentication.
+      P: Authenticate use current UI's password.
+
+[LSW3-Ethernet0/0/2]disp e	
+[LSW3-Ethernet0/0/2]disp e?
+  e-trunk                                 efm
+  environment                             erps
+  error-down                              eth-trunk
+  event                                   
+[LSW3-Ethernet0/0/2]disp e	
+[LSW3-Ethernet0/0/2]disp event?
+  event                                   
+[LSW3-Ethernet0/0/2]disp event ?
+  information  Information
+  |            Matching output
+  <cr>         
+
+[LSW3-Ethernet0/0/2]disp event i	
+[LSW3-Ethernet0/0/2]disp event information ?
+  name  Event name
+  |     Matching output
+  <cr>  
+
+[LSW3-Ethernet0/0/2]ddisp s	
+[LSW3-Ethernet0/0/2]disp sta	
+[LSW3-Ethernet0/0/2]q
+[LSW3]disp e0/0/2
+           ^
+Error: Unrecognized command found at '^' position.
+[LSW3]disp e0/0/2 ?
+           ^
+Error: Unrecognized command found at '^' position.
+[LSW3]disp int e0/0/2
+Ethernet0/0/2 current state : UP
+Line protocol current state : UP
+Description:
+Switch Port, PVID :   10, TPID : 8100(Hex), The Maximum Frame Length is 9216
+IP Sending Frames' Format is PKTFMT_ETHNT_2, Hardware address is 4c1f-ccd5-244e
+Last physical up time   : 2025-02-27 14:41:22 UTC-08:00
+Last physical down time : 2025-02-27 14:41:21 UTC-08:00
+Current system time: 2025-02-27 14:57:12-08:00
+Hardware address is 4c1f-ccd5-244e
+    Last 300 seconds input rate 0 bytes/sec, 0 packets/sec
+    Last 300 seconds output rate 0 bytes/sec, 0 packets/sec
+    Input: 0 bytes, 0 packets
+    Output: 419531 bytes, 3728 packets
+    Input:
+      Unicast: 0 packets, Multicast: 0 packets
+      Broadcast: 0 packets
+    Output:
+      Unicast: 0 packets, Multicast: 3728 packets
+      Broadcast: 0 packets
+    Input bandwidth utilization  :    0%
+    Output bandwidth utilization :    0%
+
+[LSW3]
+[LSW3]int e0/0/2
+[LSW3-Ethernet0/0/2]con	
+[LSW3-Ethernet0/0/2]configuration ?
+  exclusive  Configuration exclusive occupied
+
+[LSW3-Ethernet0/0/2] User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW3>
+<LSW3>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW3>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW3>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 15:08:47-08:00 LSW3 %%01CFM/4/SAVE(l)[0]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW3> User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<LSW3>
+<LSW3>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:39:52-08:00 LSW3 %%01CFM/4/SAVE(l)[0]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW3>
+      ^
+Error: Unrecognized command found at '^' position.
+<LSW3>save
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Now saving the current configuration to the slot 0.
+Feb 27 2025 16:41:50-08:00 LSW3 %%01CFM/4/SAVE(l)[1]:The user chose Y when decid
+ing whether to save the configuration to the device.
+Save the configuration successfully.
+<LSW3>
